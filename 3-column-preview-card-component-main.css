@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+  border-radius: 15px;
+}
+.box-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 30px 40px;
+}
+
+.header-1 {
+  margin: 20px 0;
+  color: hsl(0, 0%, 95%);
+}
+
+.buton-1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.box-2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 30px 40px;
+}
+.header-2 {
+  margin: 20px 0;
+  color: hsl(0, 0%, 95%);
+}
+
+.buton-2 button {
+  color: hsl(184, 100%, 22%);
+}
+.box-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 30px 40px;
+}
+.header-3 {
+  margin: 20px 0;
+  color: hsl(0, 0%, 95%);
+}
+.buton-3 button {
+  color: hsl(179, 100%, 13%);
+}
+button {
+  margin: 20px 0;
+  background-color: hsl(0, 0%, 95%);
+  width: 50%;
+  height: 35px;
+  border-radius: 20px;
+  border-style: none;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 475px) {
+  .container {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 400px;
+  }
+  .box-1 {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+  .box-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  button {
+    width: 100px;
+    margin-top: 20px;
+    border: 2px solid currentcolor;
+    border-color: hsl(0, 0%, 95%);
+  }
+  .p-height {
+    line-height: 20px;
+  }
+  .buton-1 button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+  }
+  .buton-2 button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+  }
+  .buton-3 button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+  }
+}
